@@ -13,11 +13,11 @@ const Header = () => {
   z-30 h-[100px] lg:h-[140px] flex items-center">
       <div className="flex flex-col lg:flex-row lg:items-center w-full justify-between">
         {/*logo*/}
-        <Link to={'/'}>
+        <Link to={'/'} className="max-w-[200px]">
           <img src={Logo} alt="" />
         </Link>
         {/*nav - initialy hiden -show on desktop mode */}
-        <nav className="hidden lg:flex gap-x-12 font-semibold">
+        <nav className="hidden xl:flex gap-x-12 font-semibold">
           <Link to={'/'} className="text-[#696c6d] hover:text-primary transition">
             Home
           </Link>
@@ -31,11 +31,11 @@ const Header = () => {
             Contacts
           </Link>
         </nav>
-        {/*socials*/}
-        <Socials />
-        {/*mobile nav*/}
-        <MobileNav />
       </div>
+      {/*socials*/}
+      <Socials />
+      {/*mobile nav*/}
+      <MobileNav />
     </header>
   );
 };

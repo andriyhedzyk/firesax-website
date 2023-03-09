@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 // import icons
 import { IoMdClose } from 'react-icons/io';
 import { CgMenuRight } from 'react-icons/cg';
-// import link
+
+import { navigation } from '../components/data';
+
 import { Link } from 'react-router-dom';
-// import motion
 import { motion } from 'framer-motion';
 
 const menuVariants = {
@@ -22,11 +23,9 @@ const menuVariants = {
 const MobileNav = () => {
   const [openMenu, setOpenMenu] = useState(false)
   return (
-    <nav className='text-primary xl:hidden'>
+    <nav className="text-white xl:hidden">
       {/* nav open button */}
-      <div
-        onClick={() => setOpenMenu(true)}
-        className="text-3xl cursor-pointer">
+      <div onClick={() => setOpenMenu(true)} className="text-3xl cursor-pointer">
         <CgMenuRight />
       </div>
 
@@ -35,27 +34,33 @@ const MobileNav = () => {
         variants={menuVariants}
         initial="hidden"
         animate={openMenu ? 'show' : ''}
-        className="bg-white shadow-2xl w-full absolute top-0 right-0 max-w-xs h-screen z-20">
+        className="bg-primary shadow-2xl w-60 absolute top-0 right-0 max-w-xs h-screen z-20">
         {/* icon */}
         <div
-        onClick={() => setOpenMenu(false)}  className='text-4xl absolute z-30 left-4 top-14 text-primary cursor-pointer'>
-          <IoMdClose/>
+          onClick={() => setOpenMenu(false)}
+          className="text-4xl absolute z-30 left-4 top-14 text-white cursor-pointer">
+          <IoMdClose />
         </div>
 
         {/* menu list */}
-        <ul className='h-full flex flex-col justify-center items-center gap-y-8 text-primary font-primary font-bold text-3xl'>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/portfolio">Portfolio</Link>
-          </li>
-          <li>
-            <Link to="/contacts">Contacts</Link>
-          </li>
+        <ul className="h-full flex flex-col justify-center items-center gap-y-8 text-white font-primary font-bold text-3xl">
+          {navigation.map((item, index) => {
+            return (
+              <li className="text-white hover:text-accent cursor-pointer" key={index}>
+                <Link
+                  onClick={() => setOpenMenu(false)}
+                  to={item.href}
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  offset={-70}
+                  className="transition-all duration-300">
+                  {item.name}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
       </motion.div>
     </nav>

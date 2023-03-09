@@ -1,0 +1,25 @@
+import React from 'react'
+
+// import components
+import TestimonialSlider from '../components/TestimonialSlider';
+
+const Testimonials = () => {
+    return (
+      <section id="testimonials" className="section w-full bg-secondary px-4">
+        <div className="container mx-auto">
+          <div className=" flex flex-col items-center text-center">
+            <h2 className="section-title before:content-testimonials relative before:absolute before:opacity-40 before:-top-[2rem] before:-left-64 before:hidden before:lg:block">
+              What people say
+            </h2>
+            <p className="subtitle">
+              This unusual sax player quickly grabs people's attention and becomes a much talked
+              about feature of any event.
+            </p>
+          </div>
+          <TestimonialSlider />
+        </div>
+      </section>
+    );
+}
+
+export default Testimonials;

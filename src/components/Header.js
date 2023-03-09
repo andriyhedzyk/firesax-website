@@ -1,41 +1,43 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
-import Socials from './Socials';
-import Logo from '../img/header/logo.svg';
+import Logo from '../img/header/logo1.png';
+import Nav from './Nav';
 import MobileNav from './MobileNav';
+import Socials from './Socials';
 
-import {Link} from 'react-router-dom'
+// import link
+import { Link } from 'react-router-dom'
 
 const Header = () => {
+  const [bg, setBg] = useState(false);
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      return window.scrollY > 50 ? setBg(true) : setBg(false);
+    })
+  })
+
   return (
     <header
-      className="bg-blue-200 fixed w-full px-[30px] lg:px-[100px]
-  z-30 h-[100px] lg:h-[140px] flex items-center">
-      <div className="flex flex-col lg:flex-row lg:items-center w-full justify-between">
-        {/*logo*/}
-        <Link to={'/'} className="max-w-[200px]">
-          <img src={Logo} alt="" />
+      className={`${bg ? 'bg-tertiary h-20' : 'h-24'} flex items-center
+         fixed top-0 w-full text-white z-50 transition-all duration-300`}>
+      <div className="container mx-4 lg:mx-auto h-full flex items-center justify-between">
+        {/* logo */}
+        <Link to={'/'} className="text-white hover:text-accent cursor-pointer">
+          <img className="w-[180px] pt-0 lg:pt-6 lg:w-[250px]" src={Logo} alt="" />
         </Link>
-        {/*nav - initialy hiden -show on desktop mode */}
-        <nav className="hidden xl:flex gap-x-12 font-semibold">
-          <Link to={'/'} className="text-[#696c6d] hover:text-primary transition">
-            Home
-          </Link>
-          <Link to={'/about'} className="text-[#696c6d] hover:text-primary transition">
-            About
-          </Link>
-          <Link to={'/portfolio'} className="text-[#696c6d] hover:text-primary transition">
-            Portfolio
-          </Link>
-          <Link to={'/contacts'} className="text-[#696c6d] hover:text-primary transition">
-            Contacts
-          </Link>
+        {/* nav */}
+        <nav className="hidden lg:flex justify-items-center">
+          <Nav />
         </nav>
+        {/* socials */}
+        <div className="hidden lg:block">
+          <Socials />
+        </div>
+        {/* Nav Mobile */}
+        <div className="lg:hidden">
+          <MobileNav />
+        </div>
       </div>
-      {/*socials*/}
-      <Socials />
-      {/*mobile nav*/}
-      <MobileNav />
     </header>
   );
 };

@@ -147,14 +147,20 @@ export const testimonials = [
 
 
 //Questions
-export const questions = [
+export const questionsList = [
+  {
+    question: 'Are your fire saxophone act safe?',
+    answer: "Yes, it's absolutely safe. I can perform indoors.",
+  },
+
   {
     question: "What if my timings change after I've booked you?",
     answer:
       'We always try our best to be flexible to help ensure your event runs as smoothly as possible. If timings change slightly in the run-up to the event just let us know',
   },
   {
-    question: 'Can you provide an iPod/DJ service before and between your sets?',
+    question:
+      'Can you provide an iPod/DJ service before and between your sets?',
     answer:
       'Absolutely. This is a really popular request and we actually offer this service for free.',
   },
@@ -169,11 +175,13 @@ export const questions = [
   },
   {
     question: 'Do you bring all the equipment you need to perform?',
-    answer: 'I bring my saxophone, and wireless microphone. I need speakers and a sound mixer.',
+    answer:
+      'I bring my saxophone, and wireless microphone. I need speakers and a sound mixer.',
   },
   {
     question: 'Can you learn specific pieces before the event?',
-    answer: "If there is a special song you'd like us to learn we are happy to do this for you.",
+    answer:
+      "If there is a special song you'd like us to learn we are happy to do this for you.",
   },
 ];
 //reasons to book me

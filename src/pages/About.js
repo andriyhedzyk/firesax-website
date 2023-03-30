@@ -10,20 +10,16 @@ const About = () => {
   return (
     <section
       id="about"
-      initial={{ opacity: 0, y: '100%' }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: '100%' }}
-      transition={transition1}
       className="section bg-black">
-      <div className="container mx-auto h-full relative ">
+      <div className="w-[50%] mx-auto h-full relative ">
         <div
           className="flex-col md:flex-row-reverse lg:flex-row h-full
          items-center justify-start md:gap-x-0 lg:gap-x-24 lg:text-left mx-4 lg:mx-0 lg:mt-20">
           {/* text About me*/}
           <motion.div
-            initial={{ opacity: 0, y: '-80%' }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: '-80%' }}
+            initial={{ opacity: 0, y: '-50%' }}
+            animate={{ opacity: 1, y: 100 }}
+            exit={{ opacity: 0, y: '50%' }}
             transition={transition1}
             className="flex-1 lg:pt-22 lg:w-auto first-letter 
             z-10 flex flex-col justify-center items-center">
@@ -38,9 +34,7 @@ const About = () => {
               <br />
               Having performed worldwide, at big events and working with established companies such
               as the Netflix!
-              {/* <br />
-              He having conducted his musical education at the Lviv National Music Academy, where he graduated with a Master's Degree. */}
-              <br />
+             <br />
               <br />
               Since being a resident in the UAE have continued performing as a DJ / Saxophonist at
               Four Seasons Al Maya Island, Atlantis Palm Jumeirah, Grand Plaza Movenpick, Meydan
@@ -70,10 +64,10 @@ const About = () => {
               </li>
             </ul>
             <Link
-              to={'/portfolio'}
-              className="btn btn-md bg-accent hover:bg-accent-hover md:btn-lg transition-all">
+              to={'/booking'}
+              className="btn btn-md rounded-md bg-accent hover:bg-accent-hover md:btn-lg transition-all">
               {' '}
-              View my portfolio{' '}
+              Book now{' '}
             </Link>
           </motion.div>
         </div>

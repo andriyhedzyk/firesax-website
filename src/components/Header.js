@@ -23,7 +23,7 @@ const Header = () => {
       <div className="container mx-4 lg:mx-auto h-full flex items-center justify-between">
         {/* logo */}
         <Link to={'/'} className="text-white hover:text-accent cursor-pointer">
-          <img className="w-[180px] pt-0 lg:pt-6 lg:w-[250px]" src={Logo} alt="" />
+          <img className="w-[180px] h-[70px] pt-0 lg:pt-6 lg:w-[250px] lg:h-[120px]" src={Logo} alt="" />
         </Link>
         {/* nav */}
         <nav className="hidden lg:flex justify-items-center">

@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Zayne";
+  src: url('../src/fonts/Zayne.otf');
+}
+
 @layer base {
   body {
     @apply font-body text-paragraph leading-6 bg-black;
@@ -49,6 +54,8 @@
     @import url('https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lightgallery.css');
     @import url('https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lg-zoom.css');
     @import url('https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lg-video.css');
-
+    
     @import "~react-image-gallery/styles/css/image-gallery.css";
+    @import url("leaflet/dist/leaflet.css");
+ 
 }

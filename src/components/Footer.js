@@ -1,4 +1,5 @@
 import React from 'react'
+import {FaHeart} from 'react-icons/fa';
 //import social data
 import { social } from './data'
 //import logo
@@ -12,7 +13,6 @@ const Footer = () => {
           {/* // social icons  */}
           <div className="flex space-x-6 items-center justify-center">
             {social.map((item, index) => {
-              const { href, icon } = item;
               return (
                 <a className="text-base w-5" href={item.href} key={index}>
                   <img src={item.img} alt="" />
@@ -24,8 +24,10 @@ const Footer = () => {
           <div>
             <img className="w-[180px] pt-6 lg:w-[180px]" src={Logo} alt="" />
           </div>
-          {/* copyring */}
-          <p>&copy; 2023 All rights reserved</p>
+          {/* copying */}
+          <p className="flex">
+            &copy; 2023 All rights reserved | Made by Andriy Hedzyk
+          </p>
         </div>
       </div>
     </footer>

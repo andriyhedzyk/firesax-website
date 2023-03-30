@@ -7,6 +7,7 @@ module.exports = {
       secondary: 'Mulish',
       thirdly: 'Beyond The Mountains',
       four: 'Broadway Copyist Text Ext',
+      zayne: ['Zayne', 'regular'],
     },
     screens: {
       sm: '640px',

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "https://firesax.com/static/css/main.9a2fd975.css",
-    "main.js": "https://firesax.com/static/js/main.3615d7cd.js",
+    "main.css": "https://firesax.com/static/css/main.b01d086a.css",
+    "main.js": "https://firesax.com/static/js/main.b06af246.js",
     "static/media/14.avif": "https://firesax.com/static/media/14.e29a49877abeeecd4c08.avif",
     "static/media/12.avif": "https://firesax.com/static/media/12.8dbf6667b716451d4204.avif",
     "static/media/10.avif": "https://firesax.com/static/media/10.1cabd554a00bcc865a02.avif",
@@ -16,13 +16,16 @@
     "static/media/3.avif": "https://firesax.com/static/media/3.ab9681d98a6ecaa6cd2b.avif",
     "static/media/2.avif": "https://firesax.com/static/media/2.ee65d98e6ff3ab574f53.avif",
     "static/media/6.avif": "https://firesax.com/static/media/6.ba3e0946386e2e9354a2.avif",
+    "static/media/image-2.jpg": "https://firesax.com/static/media/image-2.291b26010e5de54da6e9.jpg",
     "static/media/heroImg.webp": "https://firesax.com/static/media/heroImg.f81531dff39238db0c7b.webp",
     "static/media/17.avif": "https://firesax.com/static/media/17.a979264cbe4a40b4d47f.avif",
     "static/media/4.avif": "https://firesax.com/static/media/4.51d0589051870fce2e1b.avif",
     "static/media/9.avif": "https://firesax.com/static/media/9.e48a57f017a5ec36da54.avif",
+    "static/media/image-1.jpg": "https://firesax.com/static/media/image-1.5cac3deccfeef6bd5c96.jpg",
     "static/media/15.avif": "https://firesax.com/static/media/15.ef7fb96913397ddcb4c8.avif",
     "static/media/13.avif": "https://firesax.com/static/media/13.7e6217b3944ca88135cb.avif",
     "static/media/18.jpg": "https://firesax.com/static/media/18.8ab35d89f35624723978.jpg",
+    "static/media/image-3.jpg": "https://firesax.com/static/media/image-3.ca99400afc6b0b993a13.jpg",
     "static/media/Zayne.otf": "https://firesax.com/static/media/Zayne.d67c2ccc259973669b90.otf",
     "static/media/testimonial-2.jpg": "https://firesax.com/static/media/testimonial-2.2774c53aef91f945f859.jpg",
     "static/media/testimonial-1.jpg": "https://firesax.com/static/media/testimonial-1.652711f95e863f47345d.jpg",
@@ -43,11 +46,11 @@
     "static/media/callIcon.svg": "https://firesax.com/static/media/callIcon.572f7720624d68a1d471db780291b8ed.svg",
     "static/media/done.svg": "https://firesax.com/static/media/done.1a87db4efa46efde7df0.svg",
     "static/media/emailIcon.svg": "https://firesax.com/static/media/emailIcon.db04e142cf6f1a43e988ea428e84d863.svg",
-    "main.9a2fd975.css.map": "https://firesax.com/static/css/main.9a2fd975.css.map",
-    "main.3615d7cd.js.map": "https://firesax.com/static/js/main.3615d7cd.js.map"
+    "main.b01d086a.css.map": "https://firesax.com/static/css/main.b01d086a.css.map",
+    "main.b06af246.js.map": "https://firesax.com/static/js/main.b06af246.js.map"
   },
   "entrypoints": [
-    "static/css/main.9a2fd975.css",
-    "static/js/main.3615d7cd.js"
+    "static/css/main.b01d086a.css",
+    "static/js/main.b06af246.js"
   ]
 }

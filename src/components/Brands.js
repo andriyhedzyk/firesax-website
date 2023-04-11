@@ -6,7 +6,7 @@ import {brands} from '../components/data'
 
 const Brands = () => {
   return (
-    <section className="min-h-[136px] max-h-80 bg-tertiary flex items-center">
+    <section className="min-h-[136px] py-10 max-h-80 bg-tertiary flex items-center">
       <div
         className="container mx-auto
           flex md:justify-between items-center flex-wrap justify-evenly scale-75 md:scale-100 lg:scale-100">

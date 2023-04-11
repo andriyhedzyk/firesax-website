@@ -38,43 +38,47 @@ import Image17 from '../img/portfolio/17.avif';
 
 // navigation
 export const navigation = [
-  {
-    name: 'Home',
-    href: '/',
-  },
-  {
-    name: 'About',
-    href: 'about',
-  },
-  {
-    name: 'Portfolio',
-    href: 'portfolio',
-  },
-  {
-    name: 'Contacts',
-    href: 'contacts',
-  },
-];
+	{
+		name: 'Home',
+		href: '/'
+	},
+	{
+		name: 'About',
+		href: 'about'
+	},
+	{
+		name: 'Portfolio',
+		href: 'portfolio'
+	},
+	{
+		name: 'Contacts',
+		href: 'contacts'
+	},
+	{
+		name: 'Booking',
+		href: 'booking'
+	}
+]
 
 // social
 export const social = [
-  {
-    img: InstagramIcon,
-    href: 'http://www.instagram.com/firesaxophonist/',
-  },
-  {
-    img: FacebookIcon,
-    href: '',
-  },
-  {
-    img: YoutubeIcon,
-    href: 'http://www.youtube.com/andriy/',
-  },
-  {
-    img: TiktokIcon,
-    href: 'http://www.tiktok.com/firesaxophonist/',
-  },
-];
+	{
+		img: InstagramIcon,
+		href: 'http://www.instagram.com/firesaxophonist/'
+	},
+	{
+		img: FacebookIcon,
+		href: 'https://www.facebook.com/andriyhedzyk'
+	},
+	{
+		img: YoutubeIcon,
+		href: 'https://www.youtube.com/@MrAndriychyk'
+	},
+	{
+		img: TiktokIcon,
+		href: 'https://www.tiktok.com/@firesaxophonist'
+	}
+]
 
 // clients
 export const brands = [

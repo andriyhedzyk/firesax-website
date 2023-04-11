@@ -1,5 +1,4 @@
 import React from 'react'
-import {FaHeart} from 'react-icons/fa';
 //import social data
 import { social } from './data'
 //import logo
@@ -25,8 +24,8 @@ const Footer = () => {
             <img className="w-[180px] pt-6 lg:w-[180px]" src={Logo} alt="" />
           </div>
           {/* copying */}
-          <p className="flex">
-            &copy; 2023 All rights reserved | Made by Andriy Hedzyk
+          <p className="flex text-sm lg:text-base">
+            &copy; 2023 All rights reserved
           </p>
         </div>
       </div>
